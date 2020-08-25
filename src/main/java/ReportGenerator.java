@@ -7,6 +7,12 @@ public class ReportGenerator implements PrimeNumberGenerator{
 
     Menu menu = new Menu();
 
+    /**
+     *
+     * @param startNum the first number in the range to begin searching for Primes
+     * @param endNum the second number in the range to end the search for Primes
+     * @return a list of Intergers in order, e.g 100-1 should return from 100 downwards.
+     */
     public List<Integer> generate(int startNum, int endNum) {
         List<Integer> primeList = new ArrayList<Integer>();
 
@@ -31,7 +37,11 @@ public class ReportGenerator implements PrimeNumberGenerator{
         }
     }
 
-
+    /**
+     *
+     * @param value an int value to check for Prime eligibility
+     * @return returns true if Prime, false, if not.
+     */
     public boolean isPrime(int value) {
 
         for (int i = 2; i < value; i++) {
